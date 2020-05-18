@@ -50,8 +50,9 @@ https://www.iconfinder.com/webalys */}
             {links.map(link => {
               return (
                 <li key={link.id} className="nav-item">
-                  <Link to={link.path} className="nav-link text-capitalize" />
-                  {link.text}
+                  <Link to={link.path} className="nav-link text-capitalize">
+                    {link.text}
+                  </Link>
                 </li>
               )
             })}
