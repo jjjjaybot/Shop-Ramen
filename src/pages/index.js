@@ -13,11 +13,11 @@ import Cart from "../components/Cart"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <BackgroundSection
+    {/* <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="Shop Ramen"
       styleClass="default-background"
-    />
+    /> */}
     <Info />
     {/* <Menu items={data.menu} /> */}
     <Products />
@@ -27,13 +27,13 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "default-background.jpeg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
+    # img: file(relativePath: { eq: "default-background.jpeg" }) {
+    #   childImageSharp {
+    #     fluid {
+    #       ...GatsbyImageSharpFluid_tracedSVG
+    #     }
+    #   }
+    # }
     menu: allContentfulCoffeeItem {
       edges {
         node {

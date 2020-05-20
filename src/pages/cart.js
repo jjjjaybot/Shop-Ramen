@@ -10,11 +10,11 @@ import Cart from "../components/Cart"
 const CartPage = ({ data }) => (
   <Layout>
     <SEO title="cart" />
-    <BackgroundSection
+    {/* <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="Shopping Cart"
       styleClass="about-background"
-    />
+    /> */}
     <Cart />
   </Layout>
 )
