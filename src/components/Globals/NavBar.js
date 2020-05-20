@@ -2,8 +2,12 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.svg"
 import { FaCart, FaCartArrowDown } from "react-icons/fa"
+import Badge from "@material-ui/core/Badge"
 
 export default class NavBar extends Component {
+  constructor(props) {
+    super(props)
+  }
   state = {
     navbarOpen: false,
     css: "collapse navbar-collapse",
@@ -30,6 +34,7 @@ export default class NavBar extends Component {
   }
   render() {
     const { css, links, navbarOpen } = this.state
+    console.log(this.props)
     return (
       <nav className="navbar navbar-expand-sm bg-light navbar-light">
         <Link to="/" className="navbar-brand">
@@ -57,7 +62,11 @@ https://www.iconfinder.com/webalys */}
               )
             })}
             <li className="nav-item ml-sm-5">
-              <FaCartArrowDown className="cart-icon" />
+              <Link to="cart" className="nav-link">
+                <Badge badgeContent={0} color="secondary">
+                  <FaCartArrowDown className="cart-icon" />
+                </Badge>
+              </Link>
             </li>
           </ul>
         </div>

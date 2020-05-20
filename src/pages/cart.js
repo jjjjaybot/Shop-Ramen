@@ -5,24 +5,23 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
-import Contact from "../components/Home/Contact"
+import Cart from "../components/Cart"
 
-const AboutPage = ({ data }) => (
+const CartPage = ({ data }) => (
   <Layout>
-    <SEO title="about" />
+    <SEO title="cart" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="about us"
+      title="Shopping Cart"
       styleClass="about-background"
     />
-    <Info></Info>
-    <Contact />
+    <Cart />
   </Layout>
 )
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "about-background.jpeg" }) {
+    img: file(relativePath: { eq: "cart1.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -32,4 +31,4 @@ export const query = graphql`
   }
 `
 
-export default AboutPage
+export default CartPage

@@ -14,10 +14,11 @@ import "./bootstrap.min.css"
 
 import NavBar from "./Globals/NavBar"
 import Footer from "./Globals/Footer"
+import { ProductProvider } from "../../context"
 
 const Layout = ({ children }) => (
   <>
-    <NavBar></NavBar>
+    <NavBar />
     {children}
     <Footer />
   </>

@@ -17,10 +17,6 @@ export default function Info() {
               Nam quis similique obcaecati sunt sapiente amet molestias est illo
               eum, dolorem exercitationem corporis voluptatum?
             </p>
-            <Link to="/about/" />
-            <button className="btn text-uppercase btn-yellow">
-              about page
-            </button>
           </div>
         </div>
       </div>
