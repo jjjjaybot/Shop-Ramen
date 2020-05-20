@@ -12,16 +12,20 @@ class Cart extends Component {
     return (
       <ProductConsumer>
         {value => {
-          const { cart } = value
-          if (cart.length > 0) {
-            return (
-              <React.Fragment>
-                <Title title="your cart" />
-                <CardColumns />
-                <CartList value={value} />
-                <CartTotals value={value} history={this.props.history} />
-              </React.Fragment>
-            )
+          if (value) {
+            const { cart } = value
+            if (cart.length > 0) {
+              return (
+                <React.Fragment>
+                  <Title title="your cart" />
+                  <CardColumns />
+                  <CartList value={value} />
+                  <CartTotals value={value} history={this.props.history} />
+                </React.Fragment>
+              )
+            } else {
+              return <EmptyCart />
+            }
           } else {
             return <EmptyCart />
           }
