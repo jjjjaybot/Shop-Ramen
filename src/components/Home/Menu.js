@@ -71,7 +71,7 @@ export default class Menu extends Component {
                       className="col-11 col-md-6 my-3 d-flex mx-auto"
                     >
                       <div>
-                        <Img fixed={node.image.fixed} />
+                        <img src={node.image.fixed.src} />
                       </div>
                       <div>
                         <div className="flex-grow-1 px-3">

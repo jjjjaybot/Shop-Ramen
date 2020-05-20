@@ -2,7 +2,8 @@ export const storeProducts = [
   {
     id: 1,
     title: "Cheese Curry",
-    img: "img/product-1.png",
+    img:
+      "https://res.cloudinary.com/firebeat/image/upload/v1590005092/product-1_nkas67.jpg",
     price: 3,
     company: "Nissin",
     info: "Cheese Curry Favor Cup Noodle",
@@ -13,7 +14,8 @@ export const storeProducts = [
   {
     id: 2,
     title: "Cup Noodle",
-    img: "img/product-2.png",
+    img:
+      "https://res.cloudinary.com/firebeat/image/upload/v1590005093/product-2_eb38uj.jpg",
     price: 2,
     company: "Nissin",
     info: "Convinent Cup Noodle",
@@ -24,7 +26,8 @@ export const storeProducts = [
   {
     id: 3,
     title: "Hong Kong Style Noodle",
-    img: "img/product-3.png",
+    img:
+      "https://res.cloudinary.com/firebeat/image/upload/v1590005093/product-3_cpondu.jpg",
     price: 4,
     company: "Nissin",
     info: "Hong Kong Style Instant Noodle",
@@ -35,7 +38,8 @@ export const storeProducts = [
   {
     id: 4,
     title: "UFO",
-    img: "img/product-4.png",
+    img:
+      "https://res.cloudinary.com/firebeat/image/upload/v1590005094/product-4_nbgzxj.png",
     price: 4,
     company: "Nissin",
     info: "Dry Noodle",
@@ -46,7 +50,8 @@ export const storeProducts = [
   {
     id: 5,
     title: "Mac and Cheese",
-    img: "img/product-5.png",
+    img:
+      "https://res.cloudinary.com/firebeat/image/upload/v1590005094/product-5_vsw0lb.png",
     price: 4,
     company: "Unknown",
     info: "Mac and Cheese Spaghetti",
@@ -57,7 +62,8 @@ export const storeProducts = [
   {
     id: 6,
     title: "Big Bowl",
-    img: "img/product-6.png",
+    img:
+      "https://res.cloudinary.com/firebeat/image/upload/v1590005094/product-6_vfs972.png",
     price: 7,
     company: "SamYang",
     info: "Big Portion of Noodle",
@@ -68,7 +74,8 @@ export const storeProducts = [
   {
     id: 7,
     title: "Udon",
-    img: "img/product-7.png",
+    img:
+      "https://res.cloudinary.com/firebeat/image/upload/v1590005094/product-7_icqtwp.jpg",
     price: 7,
     company: "Nongshim",
     info: "Home Style Udon",
@@ -79,7 +86,8 @@ export const storeProducts = [
   {
     id: 8,
     title: "Crab Favor Udon",
-    img: "img/product-8.png",
+    img:
+      "https://res.cloudinary.com/firebeat/image/upload/v1590005096/product-8_jyiv2h.png",
     price: 2,
     company: "Nissin",
     info: "Crab Favor Udon",
