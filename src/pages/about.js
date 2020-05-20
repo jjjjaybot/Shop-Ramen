@@ -10,26 +10,27 @@ import Contact from "../components/Home/Contact"
 const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="about" />
-    {/* <BackgroundSection
+    <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="about us"
       styleClass="about-background"
-    /> */}
+    />
     <Info></Info>
     <Contact />
   </Layout>
 )
 
-// export const query = graphql`
-//   {
-//     img: file(relativePath: { eq: "about-background.jpeg" }) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid_tracedSVG
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  {
+    img: file(relativePath: { eq: "about-background.jpeg" }) {
+      childImageSharp {
+        fluid {
+          tracedSVG
+          src
+        }
+      }
+    }
+  }
+`
 
 export default AboutPage

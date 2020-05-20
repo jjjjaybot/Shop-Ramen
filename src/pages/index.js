@@ -9,17 +9,18 @@ import Menu from "../components/Home/Menu"
 import Products from "../components/Home/Products"
 import Contact from "../components/Home/Contact"
 import Cart from "../components/Cart"
+import Img from "gatsby-image"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    {/* <BackgroundSection
+    <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="Shop Ramen"
       styleClass="default-background"
-    /> */}
+    />
     <Info />
-    {/* <Menu items={data.menu} /> */}
+    <Menu items={data.menu} />
     <Products />
     <Contact />
   </Layout>
@@ -27,13 +28,14 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    # img: file(relativePath: { eq: "default-background.jpeg" }) {
-    #   childImageSharp {
-    #     fluid {
-    #       ...GatsbyImageSharpFluid_tracedSVG
-    #     }
-    #   }
-    # }
+    img: file(relativePath: { eq: "default-background.jpeg" }) {
+      childImageSharp {
+        fluid {
+          tracedSVG
+          src
+        }
+      }
+    }
     menu: allContentfulCoffeeItem {
       edges {
         node {
@@ -44,7 +46,7 @@ export const query = graphql`
           }
           image {
             fixed(width: 50, height: 50) {
-              ...GatsbyContentfulFixed_tracedSVG
+              src
             }
           }
           price
