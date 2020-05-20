@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Info />
-    <Menu items={data.menu} />
+    {/* <Menu items={data.menu} /> */}
     <Products />
     <Contact />
   </Layout>

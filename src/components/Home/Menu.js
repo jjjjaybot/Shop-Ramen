@@ -37,15 +37,6 @@ export default class Menu extends Component {
   }
 
   render() {
-    console.log(
-      this.state.coffeeItems.map(({ node }) => ({
-        id: node.id,
-        image: node.image.fixed,
-        title: node.title,
-        price: node.price,
-        description: node.description.description,
-      }))
-    )
     if (this.state.items.length > 0) {
       return (
         <section className="menu py-5">
