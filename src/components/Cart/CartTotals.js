@@ -16,6 +16,7 @@ const CartTotals = ({ value, history }) => {
                 className="btn btn-outline-danger text-uppercase mb-3 px-5"
                 onClick={() => clearCart()}
                 type="button"
+                aria-label="clear cart"
               >
                 clear cart
               </button>

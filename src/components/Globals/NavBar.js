@@ -47,6 +47,7 @@ https://www.iconfinder.com/webalys */}
           className="navbar-toggler"
           type="button"
           onClick={this.navbarHandler}
+          aria-label="navbar"
         >
           <span className="navbar-toggler-icon" />
         </button>

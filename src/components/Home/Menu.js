@@ -51,6 +51,7 @@ export default class Menu extends Component {
                       type="button"
                       key={index}
                       className="btn btn-yellow text-capitalize m-3"
+                      aria-label={category}
                       onClick={() => {
                         this.handleItems(category)
                       }}
@@ -71,7 +72,7 @@ export default class Menu extends Component {
                       className="col-11 col-md-6 my-3 d-flex mx-auto"
                     >
                       <div>
-                        <img src={node.image.fixed.src} />
+                        <img src={node.image.fixed.src} alt="menu image" />
                       </div>
                       <div>
                         <div className="flex-grow-1 px-3">

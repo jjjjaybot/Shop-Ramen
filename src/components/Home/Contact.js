@@ -48,6 +48,7 @@ export default function Contact() {
             <button
               type="submit"
               className="btn btn-yellow btn-block text-capitalize mt-5"
+              aria-label="submit"
             >
               Submit
             </button>
