@@ -8,5 +8,9 @@
 import React from "react"
 import { ProductProvider } from "./context"
 export const wrapRootElement = ({ element }) => {
-  return <ProductProvider>{element}</ProductProvider>
+  return (
+    <ProductProvider>
+      <div style={{ overflowX: "hidden" }}>{element}</div>
+    </ProductProvider>
+  )
 }
