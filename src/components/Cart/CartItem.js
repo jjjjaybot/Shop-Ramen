@@ -25,11 +25,23 @@ const CartItem = ({ item, value }) => {
       <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
         <div className="d-flex justify-content-center">
           <div>
-            <span className="btn btn-black mx-1" onClick={() => decrement(id)}>
+            <span
+              className="btn btn-black mx-1"
+              role="button"
+              onKeyDown={() => decrement(id)}
+              onClick={() => decrement(id)}
+              tabIndex={0}
+            >
               -
             </span>
             <span className="btn btn-black mx-1">{count}</span>
-            <span className="btn btn-black mx-1" onClick={() => increment(id)}>
+            <span
+              className="btn btn-black mx-1"
+              role="button"
+              onClick={() => increment(id)}
+              onKeyDown={() => increment(id)}
+              tabIndex={0}
+            >
               +
             </span>
           </div>
@@ -37,7 +49,12 @@ const CartItem = ({ item, value }) => {
       </div>
       <div className="col-10 mx-auto col-lg-2">
         <div className="cart-icon">
-          <FaTrash onClick={() => removeItem(id)} />
+          <FaTrash
+            role="button"
+            onClick={() => removeItem(id)}
+            onKeyDown={() => removeItem(id)}
+            tabIndex={0}
+          />
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Title from "../Globals/Title"
 
 export default function Info() {

@@ -1,13 +1,10 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.svg"
-import { FaCart, FaCartArrowDown } from "react-icons/fa"
+import { FaCartArrowDown } from "react-icons/fa"
 import Badge from "@material-ui/core/Badge"
 
 export default class NavBar extends Component {
-  constructor(props) {
-    super(props)
-  }
   state = {
     navbarOpen: false,
     css: "collapse navbar-collapse",
@@ -33,7 +30,7 @@ export default class NavBar extends Component {
         })
   }
   render() {
-    const { css, links, navbarOpen } = this.state
+    const { css, links } = this.state
     console.log(this.props)
     return (
       <nav className="navbar navbar-expand-sm bg-light navbar-light">

@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Title from "../Globals/Title"
-import Img from "gatsby-image"
 
 const getCategories = items => {
   let tempItems = items.map(items => {
@@ -29,7 +28,7 @@ export default class Menu extends Component {
         return { coffeeItems: tempItems }
       })
     } else {
-      let items = tempItems.filter(({ node }) => node.category == category)
+      let items = tempItems.filter(({ node }) => node.category === category)
       this.setState(() => {
         return { coffeeItems: items }
       })
@@ -72,7 +71,7 @@ export default class Menu extends Component {
                       className="col-11 col-md-6 my-3 d-flex mx-auto"
                     >
                       <div>
-                        <img src={node.image.fixed.src} alt="menu image" />
+                        <img src={node.image.fixed.src} alt="ramen" />
                       </div>
                       <div>
                         <div className="flex-grow-1 px-3">

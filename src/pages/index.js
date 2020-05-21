@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,8 +8,6 @@ import Info from "../components/Home/Info"
 import Menu from "../components/Home/Menu"
 import Products from "../components/Home/Products"
 import Contact from "../components/Home/Contact"
-import Cart from "../components/Cart"
-import Img from "gatsby-image"
 
 const IndexPage = ({ data }) => (
   <Layout>
