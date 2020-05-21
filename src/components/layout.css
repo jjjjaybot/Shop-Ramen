@@ -6,9 +6,9 @@
   --mainDark: #222;
 }
 
-/* html {
+html {
   overflow-x: hidden;
-} */
+}
 body {
   background: var(--mainWhite);
   color: var(--mainDark);
