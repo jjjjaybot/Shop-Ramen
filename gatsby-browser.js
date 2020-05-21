@@ -8,9 +8,5 @@
 import React from "react"
 import { ProductProvider } from "./context"
 export const wrapRootElement = ({ element }) => {
-  return (
-    <ProductProvider>
-      <div>{element}</div>
-    </ProductProvider>
-  )
+  return <ProductProvider>{element}</ProductProvider>
 }
