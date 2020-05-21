@@ -31,7 +31,6 @@ export default class NavBar extends Component {
   }
   render() {
     const { css, links } = this.state
-    console.log(this.props)
     return (
       <nav className="navbar navbar-expand-sm bg-light navbar-light">
         <Link to="/" className="navbar-brand">
