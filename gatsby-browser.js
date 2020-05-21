@@ -10,7 +10,7 @@ import { ProductProvider } from "./context"
 export const wrapRootElement = ({ element }) => {
   return (
     <ProductProvider>
-      <div style={{ overflowX: "hidden" }}>{element}</div>
+      <div>{element}</div>
     </ProductProvider>
   )
 }
