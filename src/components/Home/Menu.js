@@ -18,6 +18,7 @@ export default class Menu extends Component {
       items: props.items.edges,
       coffeeItems: props.items.edges,
       categories: getCategories(props.items.edges),
+      style: "all",
     }
   }
 
@@ -45,15 +46,20 @@ export default class Menu extends Component {
             <div className="row mb-5">
               <div className="col-10 mx-auto text-center">
                 {this.state.categories.map((category, index) => {
-                  const style = category
+                  const style = this.state.style
                   return (
                     <button
                       type="button"
                       key={index}
-                      className="btn btn-yellow text-capitalize m-3"
+                      className={
+                        style == category
+                          ? "btn btn-yellow text-capitalize m-3 btn-default"
+                          : "btn btn-yellow text-capitalize m-3"
+                      }
                       aria-label={category}
                       onClick={() => {
                         this.handleItems(category)
+                        this.setState({ style: category })
                       }}
                     >
                       {category}
