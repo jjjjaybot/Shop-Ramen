@@ -73,3 +73,9 @@ h6 {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
+
+.navbar {
+  position: sticky !important;
+  top: 0px !important;
+  z-index: 1000 !important;
+}
