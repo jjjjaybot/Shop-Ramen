@@ -1,4 +1,4 @@
-# Spotify Profile
+# Shop Ramen
 
 > A web app for shopping ramen
 
