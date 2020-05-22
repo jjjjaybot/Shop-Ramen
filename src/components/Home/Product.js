@@ -14,7 +14,11 @@ export default class Product extends Component {
                 <h6>{title}</h6>
                 <h6>${price}</h6>
                 <button
-                  className="btn btn-yellow mt-3 text-capitalize"
+                  className={
+                    inCart
+                      ? "btn btn-yellow mt-3 text-capitalize btn-default"
+                      : "btn btn-yellow mt-3 text-capitalize"
+                  }
                   onClick={() => value.addToCart(id)}
                   aria-label="add to cart"
                   disabled={inCart ? true : false}

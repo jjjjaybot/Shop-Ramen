@@ -25,12 +25,12 @@ export default class Menu extends Component {
     let tempItems = [...this.state.items]
     if (category === "all") {
       this.setState(() => {
-        return { coffeeItems: tempItems }
+        return { coffeeItems: tempItems, allstyle: true }
       })
     } else {
       let items = tempItems.filter(({ node }) => node.category === category)
       this.setState(() => {
-        return { coffeeItems: items }
+        return { coffeeItems: items, style: true }
       })
     }
   }
@@ -45,6 +45,7 @@ export default class Menu extends Component {
             <div className="row mb-5">
               <div className="col-10 mx-auto text-center">
                 {this.state.categories.map((category, index) => {
+                  const style = category
                   return (
                     <button
                       type="button"
