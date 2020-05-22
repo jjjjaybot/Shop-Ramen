@@ -20,7 +20,7 @@ const CartPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "cart1.jpeg" }) {
+    img: file(relativePath: { eq: "cart.jpeg" }) {
       childImageSharp {
         fluid {
           tracedSVG
