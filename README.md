@@ -15,6 +15,7 @@ Styled-Component
 
 ## Setup
 
->npm install
->gatsby develop
+npm install
+
+gatsby develop
 
