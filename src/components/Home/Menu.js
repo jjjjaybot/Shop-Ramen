@@ -71,18 +71,22 @@ export default class Menu extends Component {
                       className="col-11 col-md-6 my-3 d-flex mx-auto"
                     >
                       <div>
-                        <img src={node.image.fixed.src} alt="ramen" />
+                        <img
+                          style={{ borderRadius: "50%" }}
+                          src={node.image.fixed.src}
+                          alt="ramen"
+                        />
                       </div>
                       <div>
                         <div className="flex-grow-1 px-3">
                           <div className="d-flex justify-content-between">
                             <h6 className="mb-0">
-                              <small>{node.title}</small>
+                              <p style={{ marginBottom: "0" }}>{node.title}</p>
                             </h6>
                           </div>
-                          <p className="text-muted">
-                            <small>{node.description.description}</small>
-                          </p>
+                          <small className="text-muted">
+                            {node.description.description}
+                          </small>
                         </div>
                       </div>
                     </div>
